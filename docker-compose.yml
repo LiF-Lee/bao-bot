@@ -1,0 +1,12 @@
+services:
+  bot:
+    build: .
+    image: stereomix-bot:latest
+    container_name: stereomix-bot
+    restart: unless-stopped
+    environment:
+      - DISCORD_TOKEN=${DISCORD_TOKEN}
+      - CLIENT_ID=${CLIENT_ID}
+      - GUILD_ID=${GUILD_ID}
+    volumes:
+      - ./:/app
