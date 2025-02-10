@@ -1,5 +1,5 @@
 # bao-bot
-Bao Bot Discord Service
+Bao Bot Discord Bot Service
 
 # Installation
 ```bash
